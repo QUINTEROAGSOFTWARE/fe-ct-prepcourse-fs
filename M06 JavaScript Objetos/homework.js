@@ -1,5 +1,5 @@
-/*⚠️ NO MODIFIQUES EL NOMBRE DE LAS DECLARACIONES ⚠️*/
 
+/*⚠️ NO MODIFIQUES EL NOMBRE DE LAS DECLARACIONES ⚠️*/
 const { sum } = require("nodej");
 
 function crearGato(nombre, edad) {
@@ -10,11 +10,11 @@ function crearGato(nombre, edad) {
    // Retornar el objeto.
    // Tu código:
    // var objeto={
-   // nombre,
-   // edad,
-   // neow:=>"meow"
-   // };
-   // return objeto;
+      // nombre,
+      // edad,
+      // neow:=>"meow"
+      // };
+      // return objeto;
    var objeto={
       nombre: nombre,
       edad: edad,
