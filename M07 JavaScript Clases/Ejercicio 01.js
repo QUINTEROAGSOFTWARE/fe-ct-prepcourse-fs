@@ -10,6 +10,7 @@ function crearUsuario() {
    // El valor {{nombre}} debe ser el nombre definido para la instancia de la clase.
    // Retornar la clase.
    // Tu código:
+<<<<<<< HEAD
    function usuario(usuario,nombre,email,password) {
       this.usuario=usuario;
       this.nombre=nombre;
@@ -19,17 +20,34 @@ function crearUsuario() {
             return "Hola, mi nombre es "+this.nombre
       }
    }
+=======
+   function Usuario (usuario, nombre, email, password){
+      this.usuario = usuario;
+      this.nombre = nombre;
+      this.email = email;
+      this.password = password
+      this.saludar = function (){
+         return "Hola, mi nombre es " +this.nombre;
+      }
+   }
+   return Usuario;
+>>>>>>> fccfe4616364c2f7c173078b86b164d4686285f9
 }
 
 function agregarMetodoPrototype(Usuario) {
    // Agrega un método al prototipo de "Usuario".
    // El método debe llamarse "saludar" y debe devolver el string "Hello World!".
    // Tu código:
+<<<<<<< HEAD
    Usuario.prototype.reverse =function() {
       var palabra = [];
       for (let i = 0; i < array.length; i++) {
          palabra.unshift([i]);
       }
+=======
+   Usuario.prototype.saludar = function(){
+      return "Hello World!"
+>>>>>>> fccfe4616364c2f7c173078b86b164d4686285f9
    }
 }
 
@@ -38,9 +56,17 @@ function agregarStringInvertida() {
    // El método debe llamarse "reverse".
    // [PISTA]: necesitarás utilizar el objeto "this".
    String.prototype.reverse = function(){
+<<<<<<< HEAD
       var palabra =[];
       for (let i = 0; i < this.length; i++){
          palabra.unshift(this[i]);
+=======
+      //let const var
+      var palabra = [];
+      for (let i = 0; i < this.length; i++) {
+         //push pop anshift shift
+         palabra.unshift(this[i]);  
+>>>>>>> fccfe4616364c2f7c173078b86b164d4686285f9
       }
       return palabra.join("")
    }
